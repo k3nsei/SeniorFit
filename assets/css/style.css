@@ -1,0 +1,130 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic&subset=latin,latin-ext);
+@import url(http://fonts.googleapis.com/css?family=Roboto:500,400italic,700italic,300,700,500italic,300italic,400&subset=latin,latin-ext);
+body {
+  background-color: #f0f0f0; }
+
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto; }
+
+#header-wrapper {
+  width: 100%;
+  height: 100px;
+  margin: 0;
+  padding: 0;
+  left: 0;
+  top: 0;
+  position: fixed;
+  background-color: rgba(61, 61, 61, 0.7);
+  transition: all 0.4s ease-in-out;
+  z-index: 1000; }
+  #header-wrapper #header {
+    height: 100px;
+    position: relative;
+    transition: all 0.4s ease-in-out; }
+    #header-wrapper #header #logo {
+      width: 290px;
+      height: 60px;
+      margin: 0;
+      padding: 0;
+      left: 20px;
+      top: 20px;
+      position: absolute;
+      overflow: hidden;
+      background-image: url("../images/logo-light-h.png");
+      background-position: left center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      transition: all 0.4s ease-in-out; }
+      #header-wrapper #header #logo a {
+        width: 290px;
+        height: 60px;
+        margin: 0;
+        padding: 0;
+        display: block;
+        text-indent: -9999px; }
+    #header-wrapper #header #nav > ul {
+      margin: 0;
+      padding: 0;
+      right: 20px;
+      top: 30px;
+      position: absolute;
+      transition: all 0.4s ease-in-out; }
+    #header-wrapper #header #nav > ul {
+      list-style: none; }
+      #header-wrapper #header #nav > ul > li {
+        margin-right: 8px;
+        padding: 0;
+        display: inline-block; }
+        #header-wrapper #header #nav > ul > li:last-of-type {
+          margin: 0; }
+      #header-wrapper #header #nav > ul > li {
+        border-radius: 4px;
+        font-family: 'Lato', sans-serif;
+        font-size: 19px;
+        font-weight: 700; }
+        #header-wrapper #header #nav > ul > li a {
+          padding: 10px 12px;
+          display: inline-block;
+          text-decoration: none;
+          color: #ffffff; }
+          #header-wrapper #header #nav > ul > li a:hover {
+            color: #fef978;
+            transition: all 0.3s ease-in-out; }
+  #header-wrapper.small-header {
+    height: 50px;
+    background-color: rgba(61, 61, 61, 0.98); }
+    #header-wrapper.small-header #header {
+      height: 50px; }
+      #header-wrapper.small-header #header #logo {
+        height: 46px;
+        top: 2px; }
+      #header-wrapper.small-header #header #nav > ul {
+        top: 5px; }
+
+#about_us {
+  height: 1500px;
+  background-color: #138c66; }
+  #about_us .splash-wrapper {
+    min-height: 768px;
+    padding: 520px 0 0;
+    position: relative;
+    background-color: #1c1c1c;
+    background-image: url("../images/shutterstock_113849278.jpg");
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: inset 0px -8px 50px -5px rgba(50, 50, 50, 0.75);
+    z-index: 10; }
+    #about_us .splash-wrapper::after {
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      position: absolute;
+      display: block;
+      background-color: rgba(0, 0, 24, 0.25);
+      content: '';
+      z-index: -1; }
+    #about_us .splash-wrapper .splash .shadow-text {
+      background-color: #242426;
+      background-color: rgba(36, 36, 38, 0.7);
+      box-shadow: -10px 0 0 0 rgba(36, 36, 38, 0.7), 10px 0 0 0 rgba(36, 36, 38, 0.7); }
+    #about_us .splash-wrapper .splash h1, #about_us .splash-wrapper .splash h2, #about_us .splash-wrapper .splash h3, #about_us .splash-wrapper .splash h4, #about_us .splash-wrapper .splash h5, #about_us .splash-wrapper .splash h6, #about_us .splash-wrapper .splash p {
+      width: 75%;
+      line-height: 27px;
+      font-family: 'Roboto', sans-serif;
+      font-size: 22px;
+      font-weight: 400;
+      color: #ffffff;
+      z-index: 20; }
+    #about_us .splash-wrapper .splash h1, #about_us .splash-wrapper .splash h2, #about_us .splash-wrapper .splash h3, #about_us .splash-wrapper .splash h4, #about_us .splash-wrapper .splash h5, #about_us .splash-wrapper .splash h6 {
+      width: 75%;
+      margin: 0 0 10px 0;
+      line-height: 77px;
+      font-size: 64px;
+      font-weight: 300;
+      color: #ffffff; }
+
+/*# sourceMappingURL=style.css.map */
