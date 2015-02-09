@@ -75,24 +75,79 @@ body {
   width: 100%;
   min-height: 130px;
   background-color: #efefef;
-  color: #ffffff;
+  border-top: 1px solid #ffffff;
+  box-shadow: inset 0 6px 15px -10px #9b9b9b;
+
+  a {
+    text-decoration: none;
+    color: #3b5998;
+
+    &:hover {
+      color: #ff444d;
+    }
+  }
 
   #contact {
     padding: 12px 0 30px;
+    font-family: 'Roboto', sans-serif;
+    color: #222222;
 
     h1 {
       height: 80px;
-      margin-bottom: 12px;
+      margin-bottom: 20px;
       line-height: 80px;
-      font-family: 'Roboto', sans-serif;
       font-size: 64px;
       font-weight: 400;
-      color: #ff444d;;
+      text-shadow: 1px 1px 0px #ffffff;
+      color: #ff444d;
+    }
+
+    .info {
+      font-size: 16px;
+      font-weight: 400;
+      text-shadow: 1px 1px 0px #ffffff, 2px 2px 1px #ffffff;
+      color: #444444;
+
+      span.logo {
+        width: 282px;
+        height: 60px;
+        margin-bottom: 10px;
+        display: block;
+        background-image: url("../images/logo-h.png");
+        background-position: left center;
+        background-repeat: no-repeat;
+        text-indent: -9999px;
+        opacity: 0.88;
+      }
+
+      .fb-like-box {
+        margin-top: 10px;
+        margin-left: -10px;
+      }
+
+      h1, h3, h4, h5, h6 {
+        line-height: 36px;
+        margin-bottom: 18px;
+        font-size: 32px;
+        font-weight: 700;
+      }
+
+      p {
+        line-height: 26px;
+        font-size: 24px;
+        font-weight: 700;
+
+        strong {
+          width: 92px;
+          display: inline-block;
+          font-weight: 700;
+        }
+      }
     }
 
     .contact-map {
       width: 100%;
-      height: 400px;
+      height: 450px;
     }
   }
 }
