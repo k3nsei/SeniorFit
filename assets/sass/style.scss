@@ -14,8 +14,7 @@ body {
 @import "header";
 
 #about_us {
-  height: 1500px;
-  background-color: #138c66;
+  width: 100%;
 
   .splash-wrapper {
     min-height: 768px;
@@ -66,6 +65,110 @@ body {
         font-size: 64px;
         font-weight: 300;
         color: #ffffff;
+      }
+    }
+  }
+}
+
+#schedule-wrapper {
+  width: 100%;
+  display: table;
+  background-color: #138c66;
+
+  #schedule {
+    padding: 52px 0 32px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    text-shadow: 1px 1px 0px #000000;
+    color: #ffffff;
+
+    h1 {
+      height: 80px;
+      margin-bottom: 20px;
+      line-height: 80px;
+      font-size: 64px;
+      font-weight: 400;
+    }
+
+    table {
+      width: 100%;
+      min-height: 280px;
+      margin: 20px 0;
+      background-color: #138c66;
+
+      tr {
+        > th, > td {
+          width: 20%;
+          border: 2px solid lighten(#138c66, 15%);
+        }
+
+        > th {
+          padding: 8px 6px;
+          background-color: lighten(#138c66, 5%);
+          border-bottom: 2px solid lighten(#138c66, 15%);
+          font-size: 28px;
+          font-weight: 700;
+          font-style: italic;
+          text-align: center;
+          color: lighten(#138c66, 65%);
+        }
+
+        > td {
+          padding: 10px 10px 0;
+          text-align: left;
+
+          &.blank {
+            vertical-align: middle;
+            text-align: center;
+            font-style: italic;
+            font-weight: 700;
+          }
+
+          .exercise {
+            margin-bottom: 6px;
+            padding: 6px 8px;
+            display: block;
+
+            > .time {
+              font-weight: 700;
+              font-style: italic;
+
+              &::after {
+                content: " - ";
+              }
+            }
+
+            > .type {
+              font-weight: 700;
+              font-style: italic;
+            }
+
+            &.c1 {
+              background-color: #b06257;
+            }
+
+            &.c2 {
+              background-color: #436ec9;
+            }
+
+            &.c3 {
+              background-color: #c8ba4b;
+            }
+
+            &.c4 {
+              background-color: #79ce56;
+            }
+
+            &.c5 {
+              background-color: #bc5fc9;
+            }
+
+            &.c6 {
+              background-color: #43ceb9;
+            }
+          }
+        }
       }
     }
   }
